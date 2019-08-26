@@ -1,0 +1,2147 @@
+function applycss(css){
+    var head = document.getElementsByTagName('head')[0];
+    var s = document.createElement('style');
+    s.setAttribute('type', 'text/css');
+    s.appendChild(document.createTextNode(css));
+    head.appendChild(s);
+ }
+applycss(`
+/*================================
+	Whatsapp Dark Theme - OrriGo
+	by OrriGo
+	https://userstyles.org/styles/137247
+	Last updated: v19: 30/05/2019
+	- update style
+
+Feel free to leave any comments below and to donate.
+================================*/
+
+/* Chat lines */
+  webkit-scrollbar-thumb
+  {
+    background-color: #2c2c2c!important;
+  }
+/* On event. */
+
+  #side ._1NrpZ ._2EXPL._1f1zm,
+#side ._1NrpZ ._2EXPL:hover
+  {
+    background-color: rgba(0, 204, 187, 0.24) !important;
+  }
+/*header*/
+
+  .chat-body,
+.body,
+.header-body
+  {
+    border-top: 1px solid #f2f2f20 !important;
+    padding-right: 15px;
+  }
+
+  html[dir] ._2y17h
+  {
+    background-color: hsl(174, 42%, 23%) !important;
+    padding: 10px 16px;
+  }
+
+  .chat-status
+  {
+    color: #898989 !important;
+	/* Chat Text */;
+  }
+
+  html[dir=ltr] .Tkt2p
+  {
+    padding: 6px 7px 8px 9px;
+    background-color: rgba(107, 107, 107, 0.39);
+    border-radius: 7.5px;
+  }
+
+  html[dir] ._2xOyO
+  {
+    background-color: rgba(0, 0, 0, 0.86);
+  }
+/* Chat Send Files */
+
+  html[dir] ._1Plpp
+  {
+    background-color: #ffffff00 !important;
+  }
+
+  html[dir] ._1RQfk
+  {
+    background-color: #9e9b9b;
+  }
+
+  html[dir] ._3pkkz
+  {
+    background-color: #2c2c2c;
+    padding: 5px 10px;
+  }
+
+  html[dir] ._2CORf ._12xX7
+  {
+    background-color: #d1ecbc;
+    background-color: rgba(107, 107, 107, 0.39);
+  }
+/*bottom chat*/
+
+  .pane-footer.pane-chat-footer
+  {
+    color: darkturquoise !important;
+    background: rgba(255, 255, 255, 0.3) !important;
+  }
+
+  .input-container
+  {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border: none !important;
+  }
+
+  ._2dGjP
+  {
+    box-sizing: border-box;
+    color: #d8d8d8 !important;
+  }
+/*Datum chat menu */
+
+  .message-system
+  {
+    background-color: rgba(0, 241, 255, 0.39);
+    padding: 5px 12px 6px 12px;
+    border-radius: 7.5px;
+  }
+/*chat Share */
+
+  ._2DNgV._1i1U7,
+.jZ4tp._1i1U7
+  {
+    background: transparent!important;
+  }
+/* Chat text color. */
+
+  .message-in,
+.message-out,
+.message
+  {
+    background-color: #2c2c2c!important;
+  }
+
+  .message-in .selectable-text,
+.message-out .selectable-text,
+.message .quoted-mention
+  {
+    color: #dddddd !important
+	/* Unread OK and Hover Icons */;
+  }
+
+  [role="button"]:hover span svg path,
+[data-icon]:hover svg path,
+button:hover span svg path,
+[data-icon="status-dblcheck-ack"] svg path,
+._1DZAH[role="button"] [data-icon="msg-dblcheck-ack"] svg path
+  {
+    fill: #31f94f !important;
+  }
+
+  button span svg path,
+button,
+[role="button"] span svg path,
+._10anr:hover button span svg g path[fill]
+  {
+    fill: rgba(27, 177, 170, 0.2) !important;
+    fill-opacity: 1 !important;
+    opacity: 1 !important;
+  }
+
+  ._10anr.vidHz._14ou2._28zBA,
+html[dir] .iHLo1,
+html[dir] ._3hV1n,
+html[dir] ._3v_lq.j5Hcb,
+html[dir] ._1UvQg
+  {
+    background-color: #999!important;
+  }
+/*bottom chat menu */
+
+  html[dir] .gQzdc._3sdhb
+  {
+    background: #CACACA !important;
+  }
+
+  .drawer-header-small
+  {
+    background-color: darkcyan !important;
+  }
+
+  .html[dir] ._1AKfk
+  {
+    background-color: #2c2c2c !important;
+  }
+
+  html[dir] ._1CRb5 ._1AKfk
+  {
+    background-color: transparent !important;
+    color: deepskyblue;
+  }
+
+  html[dir] ._1AKfk
+  {
+    background-color: transparent;
+  }
+
+  html[dir] .jN-F5
+  {
+    background: content-box !important;
+    color: #00ff7f;
+  }
+
+  .block-compose
+  {
+    background: #00635a !important;
+  }
+
+  .html[dir] ._1CkkN
+  {
+    background-color: darkcyan !important;
+  }
+
+  .drawer-header
+  {
+    background-color: #2c2c2c;
+  }
+
+  .gQzdc
+  {
+    background-color: #2c2c2c !important;
+  }
+
+  .html[dir] .gQzdc
+  {
+    background-color: #2c2c2c !important;
+  }
+
+  .section-header
+  {
+    background-color: #242424 !important;
+  }
+/*line bottom write zone "new group"*/
+
+  .input-advanced.active
+  {
+    border-bottom: 1px solid #ccc!important;
+  }
+/*new group message*/
+
+  .placeholder
+  {
+    color: #1f1f1f!important;
+  }
+/*estado*/
+
+  .input-advanced .input-line,
+.input-line input
+  {
+    color: #CACACA!important;
+  }
+/*menu */
+
+  html[dir] ._3_R6X,
+.message-in,
+.message-out,
+html[dir] ._2uLFU,
+progress,
+#side,
+footer,
+._2uLFU._3aCko.Qap-N,
+html[dir] ._3D9Wd,
+.WX_XW,
+._2Par4,
+html[dir] ._3gUiM,
+html[dir] ._1CnF3,
+html[dir] ._1sGGp._2nFG1,
+html[dir] .Uukb4,
+option,
+html[dir] ._2NbD3,
+html[dir] ._2EYZY,
+html[dir="ltr"]
+  {
+    background-color: rgba(0, 0, 0, 0.20)!important;
+  }
+
+  ._1fkhx
+  {
+    background-color: #565555 !important;
+  }
+
+  html,
+body,
+div,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+select,
+option,
+textarea
+  {
+    font-family: Roboto, sans-serif!important;
+    color: #00f1ff;
+  }
+
+  ._25Ooe .label
+  {
+    color: #00f9e4;
+  }
+/*Titel Chat */
+
+  .O90ur
+  {
+    color: #00fdffb5;
+    font-style: italic;
+  }
+
+  ._111ze
+  {
+    font-weight: 500;
+  }
+
+  ._2zCDG
+  {
+    font-weight: normal;
+    overflow: hidden;
+    color: #8efffb;
+  }
+
+  ._25Ooe
+  {
+    color: #20abff;
+  }
+
+  ._3BCzw
+  {
+    background-color: cadetblue;
+  }
+
+  .DYGf2,
+._3EFt_,
+._3cMIj
+  {
+    color: rgba(0, 253, 255, 0.97);
+  }
+
+  .CxUIE ._25Ooe
+  {
+    font-weight: 500;
+    color: #09d261;
+  }
+
+  ._3T2VG
+  {
+    text-transform: capitalize;
+    color: deepskyblue;
+  }
+/*Emoji Icons */
+
+  html[dir=ltr] .Gz6Af
+  {
+    font-family: Roboto, sans-serif!important;
+    color: #00f1ff;
+  }
+
+  html[dir=ltr] ._28nB8
+  {
+    background-color: #2C2C2C !important;
+  }
+
+  html[dir=ltr] .QQnvT
+  {
+    background-color: #2C2C2C !important;
+  }
+
+  html[dir=ltr] ._2Brv4
+  {
+    background-color: #2C2C2C !important;
+  }
+
+  html[dir] ._16pld
+  {
+    background-color: #2C2C2C !important;
+  }
+
+  #startup,
+#initial_startup,
+.app-wrapper::after,
+html[dir] ._3dqpi,
+html[dir] ._3auIg,
+html[dir] ._3CPl4,
+html[dir] ._2MSJr,
+html[dir] ._1NrpZ,
+html[dir] ._2EXPL,
+html[dir] .gQzdc::after,
+html[dir] ._3qlW9,
+html[dir] ._1GX8_,
+html[dir] ._3AwwN,
+html[dir] ._1WliW,
+html[dir] ._3AwwN::after,
+html[dir] ._3dGYA,
+html[dir] ._3oju3,
+html[dir] ._2bXVy,
+html[dir] ._1CSx9,
+html[dir] ._1CRb5,
+html[dir] ._1CkkN,
+html[dir] ._2fq0t,
+html[dir] ._1XwnX,
+input,
+header,
+html[dir] ._39pS-,
+html[dir] ._1iMEz,
+html[dir] .OMzAb,
+._1VD7W,
+html[dir] ._3b2Cf,
+html[dir] .MS-DH::before,
+html[dir] .MS-DH._2-mCk,
+html[dir] ._2lwig._2nFG1,
+html[dir] .MS-DH._2-mCk:before,
+html[dir] .MS-DH._2-mCk:after,
+html[dir] .IKxkY ._12xX7,
+html[dir] .gQzdc:after,
+html[dir] ._1GX8_,
+html[dir] .ZwkQK,
+html[dir] ._2U_Zc::before
+  {
+    background-color: #2c2c2c;
+  }
+
+  html[dir] .gQzdc._3sdhb ._2MSJr
+  {
+    background-color: #2c2c2c;
+  }
+
+  html[dir] ._1qdni,
+html[dir] .R0lQ6,
+html[dir] .mnt6B,
+html[dir] .bZ3B9,
+html[dir] ._3ETD3
+  {
+    background-color: transparent!important;
+    color: #00ffa3;
+  }
+
+  .dropdown-item-action
+  {
+    color: #000000;
+  }
+
+  [title*="audio"].emojitext.ellipsify
+  {
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-name: escv;
+  }
+
+  [data-asset-intro-image]
+  {
+    background-image: url("http://i.imgur.com/R4LmRLD.png");
+    position: relative;
+    background-color: #2c2c2c;
+    left: 40px;
+    top: 30px;
+  }
+
+  .message-in .tail-container,
+.message-out .tail-container
+  {
+    background: none
+	/* full screen */;
+  }
+
+  .app-wrapper-web .app
+  {
+    border-radius: 4px !important;
+    top: 0px !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 auto !important;
+  }
+	/* Update */
+
+  html[dir] ._1qUma
+  {
+    background-color: #252222 !important;
+  }
+
+  html[dir] ._1UbeR
+  {
+    padding-top: 62px;
+    background-color: #2c2c2c !important;
+  }
+
+  ._24k3z, ._2U5s1, ._2rR_l
+  {
+    background-color: #2c2c2c !important;
+    color: #00ffa3 !important;
+  }
+
+  ._2ByZq
+  {
+    background-color: #2c2c2c !important;
+    color: #21524e29 !important;
+  }
+/**
+   ** name: Dark WhatsApp Theme by Mew
+   ** description: A customizable theme for WhatsApp.
+   ** project page: https://github.com/vednoc/onyx
+   ** discord: https://discord.gg/NpT8PzA
+   ** version: 1.4.0
+   ** author : vednoc
+   ** license: MIT
+   **/
+  :root
+  {
+    --dark: #272C35;
+    --darker: #1F232A;
+    --light: #D1D1D1;
+    --lighter: #E9E9E9;
+    --accent: #7289DA;
+    --icon: #E1E1E1;
+    --shadow: rgba(0,0,0,0.10);
+    --mred: #A3525B;
+    --mgreen: #70A352;
+    --mblue: #527AA3;
+    --emojiOpacity: 0.75;
+  }
+
+  /* Body reset. */
+  body
+  {
+    background: none;
+    background-color: var(--dark);
+  }
+
+  /* Scrollbar track. */
+  *::-webkit-scrollbar-track
+  {
+    background-color: var(--shadow);
+  }
+  /* Scrollbar thumb. */
+  *::-webkit-scrollbar-thumb
+  {
+    background-color: var(--accent);
+  }
+
+  *
+  {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) var(--shadow);
+  }
+
+  /* Highlight selection. */
+  ::selection
+  {
+    color: var(--light) !important;
+    background-color: var(--accent) !important;
+  }
+
+  ::-moz-selection
+  {
+    color: var(--light) !important;
+    background-color: var(--accent) !important;
+  }
+  /* Input placeholders. */
+  ::-webkit-input-placeholder
+  {
+    color: var(--lighter) !important;
+  }
+
+  /* Progress. */
+  progress[value]::-webkit-progress-bar
+  {
+    background: var(--darker);
+  }
+  /* Value. */
+  progress[value]::-webkit-progress-value
+  {
+    background: var(--accent);
+  }
+
+  progress
+  {
+    background: var(--darker);
+  }
+
+  ::-moz-progress-bar
+  {
+    background: var(--accent) !important;
+  }
+
+  /* App wrapper. */
+  #app .app
+  {
+    background: none;
+    background-color: var(--dark);
+  }
+
+    /* Accent background. */
+  .app-wrapper::after
+  {
+    background: none !important;
+  }
+
+
+  /* Landing page. */
+  .app .iFKgT
+  {
+    border: none;
+    background-color: var(--dark) !important;
+  }
+    /* Image. */
+  .app .iFKgT [data-asset-intro-image]
+  {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    filter: opacity(0.75);
+    transition: opacity 1s ease !important;
+  }
+    /* Text color. */
+  .app .iFKgT *
+  {
+    color: var(--light);
+  }
+    /* Accent bar. */
+  .app .iFKgT::after
+  {
+    border-top-color: var(--accent) !important;
+  }
+    /* Hide the text. */
+  .iFKgT ._3mkas
+  {
+    font-size: 0px;
+  }
+    /** Theme note. */
+  .app .iFKgT ._3mkas::before
+  {
+    display: block;
+    margin-bottom: -20px;
+    font-size: 16px;
+    content: var(--message) var(--changes) !important;
+  }
+    /** Theme info. */
+  .app .iFKgT ._3mkas::after
+  {
+    display: block;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: 16px;
+    content: var(--version) !important;
+    border-top: 1px solid var(--darker);
+  }
+
+  /* Left drawer. */
+  #app .app #side
+  {
+    background-color: var(--darker);
+  }
+
+    /* Chat list. */
+  #side > header
+  {
+    background-color: var(--darker) !important;
+  }
+
+    /* Notifications && more!! */
+  #side ._2GB6m
+  {
+    background-color: var(--accent) !important;
+  }
+      /* Text color. */
+  #side ._2GB6m *
+  {
+    color: var(--lighter);
+  }
+
+    /* Search or start new chat. */
+  #side ._2HS9r
+  {
+    border-bottom: 0px solid var(--dark);
+    background-color: var(--darker) !important;
+    background-color: transparent !important;
+  }
+    /* Label background. */
+  #side ._2HS9r label,
+    #side ._2HS9r .ZP8RM._19OGD
+  {
+    border: 0px solid var(--dark);
+    background-color: var(--dark) !important;
+  }
+      /* Input element. */
+  #side ._2HS9r label input
+  {
+    color: var(--light);
+    background-color: transparent;
+  }
+
+  #side ._2HS9r > div::after
+  {
+    border-color: var(--darker);
+    background-color: var(--dark);
+  }
+
+  /* New group and group info buttons. */
+  ._2EXPL .dIyEr ._1jJLh,
+  ._2EXPL .dIyEr ._1WliW
+  {
+    box-shadow: 0 0 8px -1px var(--shadow) !important;
+    background-color: var(--dark) !important;
+  }
+
+  /* Search results. */
+  #side ._1AKfk
+  {
+    color: var(--accent);
+    background-color: var(--dark);
+  }
+    /* Matching results. */
+  #side .matched-text
+  {
+    color: var(--accent) !important;
+  }
+
+    /* Contacts wrapper. */
+  #pane-side, ._11GZy ._2UaNq
+  {
+    background-color: transparent !important;
+  }
+      /* Contacts. */
+  #pane-side ._2UaNq, ._11GZy ._26JG5
+  {
+    transition: 200ms ease-in-out;
+    background-color: transparent !important;
+  }
+        /* On event. */
+  #pane-side ._2UaNq._3mMX1,
+        #pane-side ._2UaNq:hover
+  {
+    background-color: var(--dark) !important;
+  }
+        /* Text color. */
+  #pane-side ._2UaNq *
+  {
+    color: var(--light);
+  }
+        /* Borders. */
+  #pane-side ._2UaNq::after, #pane-side ._2WP9Q
+  {
+    border-color: var(--darker) !important;
+  }
+        /* Avatar wrapper background. */
+  ._3RWII
+  {
+    box-shadow: 0 0 8px -1px var(--shadow) !important;
+    background-color: transparent !important;
+  }
+
+  /* New message indicator. */
+  #side .P6z4j
+  {
+    color: var(--lighter) !important;
+    background-color: var(--accent) !important;
+  }
+
+
+  /* Settings. */
+  ._11GZy, ._1KDYa
+  {
+    background-color: var(--darker) !important;
+  }
+    /* Header color. */
+  ._11GZy header, ._1KDYa header
+  {
+    min-height: 50px;
+    height: auto;
+    background-color: var(--darker) !important;
+  }
+      /* Reset header height. */
+  ._11GZy header > div:first-child
+  {
+    padding: 12px 0 !important;
+    height: auto;
+  }
+      /* Reset header title in left/right drawers. */
+  ._11GZy ._1xGbt
+  {
+    margin-top: 2px !important;
+    font-size: 16px;
+  }
+    /* Transparent sections. */
+  ._11GZy ._1CRb5, ._1KDYa ._2LSbZ
+  {
+    box-shadow: none !important;
+    background-color: transparent !important;
+  }
+      /* Highlighted sections. */
+  ._11GZy ._3hhmj ._1CkkN
+  {
+    background-color: var(--darker) !important;
+  }
+      /* Change profile picture. */
+  ._11GZy .WX_XW, ._11GZy ._2Lbqu, ._1JS2G
+  {
+    background-color: rgba(0,0,0,0.5) !important;
+  }
+      /* Text color. */
+  ._11GZy *
+  {
+    color: var(--light);
+  }
+      /*// Zoom in/out. */
+  ._2LALH
+  {
+    background-color: var(--dark) !important;
+  }
+
+    /*// Option/select elements. */
+  .uyEaY select
+  {
+    border-color: var(--accent);
+  }
+
+  .uyEaY select option
+  {
+    background-color: var(--dark);
+  }
+
+    /* Archived chat image. */
+  ._2fq0t ._2Lev2
+  {
+    background-color: var(--dark) !important;
+  }
+
+    /* Body. */
+  ._2fq0t ._2sNbV ._1CkkN,
+    ._2fq0t ._2sNbV ._2EXPL
+  {
+    background-color: transparent;
+  }
+      /* On event. TODO: Fixed, but it might still overlap somewhere. */
+  .k1feT ._2sNbV > ._1CkkN:hover,
+      ._2fq0t ._2sNbV ._1CkkN:hover
+  {
+    background-color: var(--dark);
+  }
+
+    /* New chat section. */
+  ._2fq0t .gQzdc label
+  {
+    border: none;
+    background-color: var(--dark);
+  }
+    /* Input element. */
+  ._2fq0t .gQzdc label input
+  {
+    background-color: transparent;
+  }
+
+    /* New group. */
+  ._2fq0t ._39pS-
+  {
+    background-color: transparent !important;
+  }
+      /* Header. */
+  ._2fq0t ._1AKfk
+  {
+    background-color: var(--darker) !important;
+  }
+        /* On event. */
+  .k1feT ._2fq0t ._2EXPL._1f1zm,
+        .k1feT ._2fq0t ._2EXPL:hover
+  {
+    background-color: var(--dark) !important;
+  }
+      /* Search element */
+  ._66JgU ._3_3Rs
+  {
+    border-bottom: none !important;
+  }
+
+  ._66JgU ._3_3Rs input, ._66JgU ._3_3Rs ::placeholder
+  {
+    color: var(--lighter) !important;
+  }
+
+  /** Context/dropdown menu. */
+  ._2hHc6
+  {
+    background-color: var(--darker) !important;
+    box-shadow: 0 4px 16px 0 var(--shadow) !important;
+  }
+
+  ._2hHc6 li:hover, ._2hHc6 li:hover div
+  {
+    color: var(--accent) !important;
+    background-color: var(--dark) !important;
+  }
+
+  ._2hHc6 div, ._1ArIP div
+  {
+    color: var(--light);
+  }
+
+  /* Middle drawer. */
+  #main
+  {
+    background-color: var(--dark);
+  }
+
+    /* Doodle background. TODO: Plans for the future. */
+  .app .fzCXy
+  {
+    filter: invert(100%) opacity(0.45) !important;
+  }
+
+    /* Jump to present button. */
+  ._3KRbU
+  {
+    box-shadow: 0 4px 8px 2px var(--shadow) !important;
+    background-color: var(--darker) !important;
+  }
+    /* Number of messages. */
+  ._3KRbU > span > span
+  {
+    background-color: var(--accent) !important;
+  }
+
+    /* Header. */
+  #main header
+  {
+    border: none;
+    background-color: var(--dark);
+  }
+      /* Text color. */
+  #main header ._1WBXd *
+  {
+    color: var(--light);
+  }
+    /* Header text color. #22 */
+  #main > header > div span[title]
+  {
+    color: var(--light);
+  }
+    /* Header separator. */
+  #main > header::after
+  {
+    border-bottom-color: var(--darker);
+    background-color: transparent;
+  }
+
+  /* Footer. */
+  #main footer
+  {
+    border-top: 1px solid var(--darker);
+    background-color: var(--darker);
+  }
+    /* Input wrapper. */
+  #main footer > div
+  {
+    color: var(--light);
+    border: none;
+      /* border-bottom: 2px solid var(--dark); */
+    background-color: var(--dark);
+  }
+      /* Input element. */
+  #main footer > div:nth-child(1) > div:nth-child(2)
+  {
+    border: none !important;
+    color: var(--light);
+    background-color: var(--darker) !important;
+  }
+    /* Voice message duration. */
+  ._30ie-
+  {
+    color: var(--light) !important;
+  }
+
+  /* Unknown contact. */
+  .TYhk9
+  {
+    border-color: var(--darker) !important;
+    background-color: var(--dark) !important;
+    box-shadow: 0 0px 8px 2px var(--shadow) !important;
+  }
+  /* Buttons. */
+  .TYhk9 ._1sB6s
+  {
+    color: var(--light) !important;
+    background-color: var(--darker) !important;
+  }
+
+    /* Shared contact button colors. */
+  .b332w
+  {
+    color: var(--accent) !important;
+  }
+    /* Shared contact text. */
+  .AVd_p
+  {
+    color: var(--lighter) !important;
+  }
+    /* View contact. */
+  ._36ApL
+  {
+    background-color: transparent !important;
+  }
+
+  /* Hide 'Type a message' once focused. */
+  ._3FeAD.focused div[style]
+  {
+    color: transparent !important;
+  }
+    /* Placeholder text color. */
+  ._3FeAD div[style]
+  {
+    transition: color 0.15s ease;
+    color: var(--lighter) !important;
+  }
+
+  /* Right drawer. */
+  /* .app ._3HZor ._2fq0t {
+    background-color: var(--darker); } */
+    /* Border-color. */
+  .app ._3HZor
+  {
+    border-left-color: transparent !important;
+  }
+    /* Header. */
+  .app ._3HZor header
+  {
+    background-color: var(--darker);
+  }
+      /* Text color. */
+  .app ._3HZor header div
+  {
+    color: var(--light);
+  }
+
+    /* Group info sections. */
+  .app ._3HZor ._26JG5, .app ._3HZor ._2UaNq
+  {
+      /*box-shadow: 0 1px 3px shadow /**/
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .app ._3HZor ._26JG5:hover
+  {
+    background-color: var(--dark) !important;
+  }
+      /* User's name. */
+      .app ._3HZor span {
+        color: var(--light); }
+
+      /* Group options. */
+      .app ._3HZor ._1CRb5 ._2EXPL,
+      .app ._3HZor ._1CRb5 ._1CkkN {
+        transition: 200ms ease-in-out;
+        background-color: transparent; }
+        /* On event. */
+        .app ._3HZor ._1CRb5 ._2EXPL._3xj48:hover,
+        .app ._3HZor ._1CRb5 ._1CkkN:hover {
+          background-color: var(--dark); }
+        /* Text color. */
+        .app ._3HZor ._1CRb5 ._2EXPL * {
+          color: var(--light); }
+        /* Admin color. */
+        .app ._3HZor ._1CRb5 ._2e8Mu {
+          border: 2px solid var(--accent); }
+
+
+  /* Search messages. TODO: Apply this to all search elements. */
+  .a5vst, .a5vst .ZP8RM._19OGD /*, ._3HZor ._1iMEz._3sdhb*/ {
+    background-color: var(--darker) !important; }
+    /* Input wrapper. */
+    .a5vst label {
+      border: 0px solid var(--dark) !important;
+      background-color: var(--dark) !important; }
+    .a5vst .ZP8RM::after {
+      border: none !important;
+      background-color: var(--dark) !important; }
+      .a5vst label input {
+        background-color: transparent !important; }
+
+  /* Search messages body. */
+  .YAPQk {
+    background-color: var(--darker) !important; }
+    /* Matching results. */
+    ._3HZor .matched-text {
+      color: var(--accent) !important; }
+    /* On event. */
+    .YAPQk ._1f1zm > ._3j7s9,
+    .YAPQk ._3j7s9:hover {
+      background-color: var(--dark) !important; }
+
+  /* Search messages. */
+  #pane-side ._2EXPL {
+    background-color: transparent !important; }
+
+  /* Starred messages. */
+  ._3HZor .ZwkQK, .ZwkQK {
+    background-color: var(--dark) !important; }
+    /* On event. */
+    .starred-msg-wrapper, .MS-DH {
+      transition: 200ms ease-in-out !important; }
+    /* On event. */
+    .MS-DH._2-mCk, .MS-DH._1baOM, .MS-DH.ZuHmv {
+      background-color: var(--dark) !important; }
+
+
+  /* Message info. */
+  ._3FAwT {
+    background-color: var(--dark) !important; }
+    /* Doodle image. */
+    ._3FAwT .pane-chat-tile {
+      filter: invert(100%) opacity(0.8); }
+    /* Read by. */
+    ._3HZor ._2sNbV ._2HDl5 ._2wP_Y > div {
+      background-color: var(--dark) !important; }
+
+
+  /* Media/docs/links section. */
+  ._3HZor ._3b2Cf {
+    background-color: var(--darker) !important; }
+  /* Active indicator. */
+  ._3HZor ._3b2Cf:before {
+    background-color: var(--accent) !important; }
+  /* Selected image. */
+  ._2Ry6_ ._2mlDB {
+    border-color: var(--accent) !important; }
+  /* Selected links. */
+  .D6ZWG {
+    background-color: var(--darker) !important; }
+  /* Text color. */
+  .D6ZWG ._1S4i5,
+  ._2Mvo8.fyJXn {
+    color: var(--lighter); }
+
+  /** Media viewer. */
+  #app ._1zcz2, ._3_R6X {
+    background-color: transparent !important; }
+    /* Pseudo-element background. */
+    #app ._1zcz2::before, ._3_R6X::before {
+      content: ""; position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background-color: var(--dark);
+      opacity: 0.8; z-index: -1; }
+    /* Chevron/preloader background. */
+    ._2-IeP, ._3dGYA {
+      background-color: var(--darker) !important; }
+
+    /* Header. */
+    #app ._1zcz2 ._2YdsD, ._3_R6X ._1XwnX {
+      background-color: var(--dark) !important; }
+      /* Inner element. */
+      #app ._1zcz2 ._2EXPL {
+        background-color: transparent !important; }
+        /* Text color. */
+        #app ._1zcz2 ._2EXPL ._3j7s9 *,
+        ._3_R6X ._12oAB,
+        ._1XwnX * {
+          color: var(--light); }
+
+    /* Footer. */
+    ._3Qh77 {
+      border: none !important;
+      background-color: var(--darker) !important; }
+      /* Selected image. */
+      ._3Qh77 ._1xQmx {
+        transform: scale(1) !important;
+        border: 3px solid var(--accent) !important }
+        html[dir=ltr] .UPNDG:hover:not(._1xQmx) {
+          border: 0px solid var(--accent);
+          outline: 3px solid var(--accent) !important; }
+
+
+
+  /* Message bubbles. */
+  .message-in:not(.a81-s), .message-out:not(.a81-s), .message {
+    background-color: var(--darker) !important; }
+    ._2v02G {
+      color: var(--lighter) !important; }
+
+    /* Message text color. */
+    .message-in .selectable-text,
+    .message-out .selectable-text,
+    .quoted-mention,
+    ._1upWv {
+      color: var(--light) !important; }
+
+    /* Use accent color for links. #20 */
+    a[href].selectable-text {
+      color: var(--accent) !important; }
+
+    /* Forwarded message. */
+    ._15aTv {
+      color: var(--lighter) !important; }
+
+    /* Phone numbers of users that aren't your contacts. */
+  ._3Ye_R._1wjpf._1OmDL
+  {
+    color: var(--lighter) !important;
+  }
+
+    /* Mentions. */
+  .matched-mention, .matched-mention .at-symbol
+  {
+    color: var(--accent) !important;
+  }
+
+      /* Message meta text color. */
+  [class*="message-"] div > div:last-child span
+  {
+    color: var(--light);
+  }
+
+    /* Image/gif/video meta wrapper. */
+  .KYpDv ._1DZAH
+  {
+    bottom: 8px;
+    padding: 2px 5px;
+    border-radius: 4px;
+    background-color: var(--shadow);
+  }
+      /* Text color. */
+  .KYpDv ._1DZAH ._3EFt_
+  {
+    margin-top: 0px;
+    color: var(--lighter);
+  }
+
+    /* Message options. */
+  ._3EQsG
+  {
+      /*transition: 200ms ease-in-out;/**/
+    background: linear-gradient(to right, transparent 0%, var(--darker) 40%) !important;
+  }
+      /* Smooth transition. */
+  .message span:last-child div
+  {
+    transition: 50ms ease-in-out !important;
+  }
+
+    /* Typing... */
+  span._2ZAIy
+  {
+    color: var(--accent) !important;
+  }
+
+    /* System messages. */
+  .a7otO
+  {
+    box-shadow: 0 2px 8px 0px var(--shadow) !important;
+    border-bottom: 3px solid var(--shadow) !important;
+    background-color: var(--darker) !important;
+  }
+      /* Text color and shadows. */
+  .a7otO *
+  {
+    text-shadow: none !important;
+    color: var(--lighter) !important;
+  }
+      /* New message. */
+  #main ._3Xx0y
+  {
+    border: none !important;
+    background-color: var(--darker) !important;
+  }
+        /* X unread messages. */
+  #main ._3Xx0y span
+  {
+    box-shadow: 0 0 8px 0 var(--shadow) !important;
+    color: var(--light) !important;
+    background-color: var(--dark) !important;
+  }
+
+    /* Loader. */
+  ._2sOZc
+  {
+    box-shadow: 0 2px 4px -1px var(--shadow) !important;
+    background-color: var(--darker) !important;
+  }
+
+    /* Document embeds. */
+  ._1vKRe
+  {
+    border-color: var(--darker) !important;
+  }
+    /* Embed background. */
+  ._12xX7
+  {
+    background-color: var(--dark) !important;
+  }
+    /* Embed text color. */
+  ._12xX7 *
+  {
+    color: var(--light);
+  }
+
+    /* Link embeds. */
+  ._1sGGp._2nFG1, ._2lwig._2nFG1
+  {
+    background-color: var(--dark) !important;
+  }
+      /* Text color. */
+  ._1sGGp._2nFG1 *, ._2lwig._2nFG1 *
+  {
+    color: var(--light);
+  }
+      /* Link options. */
+  ._2DNgV._2Cju4, .jZ4tp._2Cju4
+  {
+    background: none !important;
+  }
+
+
+  /* Reply section. (= */
+  footer .rstyJ
+  {
+    box-shadow: 0 0px 8px 0 var(--darker) !important;
+    background-color: var(--darker) !important;
+  }
+  /* Fix margins. */
+  footer .rstyJ > div:first-child
+  {
+    margin: 0 0 5px 10px !important;
+    background-color: transparent !important;
+  }
+  /* Reply content. */
+  footer .rstyJ > div:first-child > div
+  {
+    background-color: var(--dark) !important;
+  }
+  /* Close button. */
+  footer .rstyJ > div:last-child
+  {
+    position: relative;
+    margin: 0 8px 5px 8px !important;
+    background-color: transparent !important;
+  }
+  /* Make the button larger. */
+  footer .rstyJ > div:last-child > div svg
+  {
+    padding: 18px;
+    border-radius: 6px;
+    background-color: var(--dark);
+  }
+
+  /* Mention group members. */
+  .Uukb4
+  {
+    color: var(--light);
+    border-left: none !important;
+    background-color: var(--dark) !important;
+  }
+  /* Wrapper. */
+  .Uukb4 ._3v_lq
+  {
+    transition: 300ms ease-in-out !important;
+    background-color: transparent !important;
+  }
+  /* Active. */
+  .Uukb4 .j5Hcb._3v_lq,
+  .Uukb4 ._3v_lq:hover
+  {
+    background-color: var(--darker) !important;
+  }
+
+
+  /* Select messages. */
+  #main ._3D9Wd
+  {
+    background-color: var(--shadow);
+  }
+    /* Hover over messages. */
+  #main ._1o1sm
+  {
+    transition: 100ms ease-in-out !important;
+  }
+      /* Selected message. */
+  #main ._1o1sm:hover, #main ._1o1sm._2nOMz
+  {
+    background-color: var(--shadow) !important;
+  }
+
+    /* Selected icon. */
+  #main ._1VD7W
+  {
+    border-color: var(--accent) !important;
+    background-color: var(--accente) !important;
+  }
+      /* Checkmark. */
+  #main ._1VD7W ._1KfC8
+  {
+    border-bottom-color: var(--accent);
+    border-right-color: var(--accent);
+  }
+
+    /* Footer/control/options. */
+  #main ._2FsQ8, #main ._3PWNn, #main ._3XpR2
+  {
+    background-color: var(--darker);
+  }
+      /* Text color. */
+  #main ._2FsQ8 span, #main ._3XpR2
+  {
+    color: var(--light);
+  }
+
+
+
+  /* Bubble tails -- experimental. */
+  .tail .tail-container
+  {
+    width: 0px !important;
+    height: 10px !important;
+    z-index: 0 !important;
+    border-top: 12px solid var(--darker);
+    background: none !important;
+  }
+
+  .tail.message-in .tail-container
+  {
+    left: -10px !important;
+    top: 0px;
+    border-left: 10px solid transparent;
+    border-radius: 5px 0 0 0;
+  }
+
+  .tail.message-out .tail-container
+  {
+    right: -10px !important;
+    top: 0px;
+    border-right: 10px solid transparent;
+    border-radius: 0 5px 0 0;
+  }
+
+    /* Disable tails everywhere. */
+    /* Tails are enabled. */
+
+    /* Disable tails everywhere except in chat. */
+  .starred-msg-wrapper .tail-container,
+    .message-gallery .tail-container,
+    .MS-DH .tail-container
+  {
+    display: none !important;
+  }
+      /* Rounded corners. */
+  .message-gallery.tail-override-left,
+      .MS-DH .tail-override-left
+  {
+    border-radius: 7.5px !important;
+  }
+
+  /** Stickers. */
+  ._1rK-b
+  {
+    background: none !important;
+  }
+  /* Sender. */
+  ._3Mf7Z
+  {
+    background-color: var(--darker) !important;
+  }
+  /* Time/status. */
+  ._3qAvH
+  {
+    background-color: var(--darker) !important;
+  }
+
+  ._3qAvH *
+  {
+    color: var(--light) !important;
+  }
+  /* Reset message menu. */
+  ._15CAo._2Nkc4
+  {
+    /* top: 0 !important;
+    right: 0 !important; */
+    background: linear-gradient(to right, transparent 0%, var(--darker) 40%) !important;
+  }
+  /* Icon background. */
+  .YiYMT
+  {
+    background-color: transparent !important;
+  }
+
+  /* Emoji/gif/stickers menu. */
+  .QChXd, ._20KNO, .RxbUw
+  {
+    background-color: var(--dark) !important;
+  }
+    /* Temporary fix for emoji container. */
+  #main footer > div:nth-child(2) > div
+  {
+    border: 0;
+  }
+    /* Emoji tabs. */
+  ._2avTY
+  {
+    background: var(--darker) !important;
+  }
+    /* Tab indicator. */
+  ._2avTY .Orl3a,
+    ._1Wbpa
+  {
+    background-color: var(--accent) !important;
+  }
+    /* Active button. */
+  ._1oNFt.-XQxp path
+  {
+    fill: var(--accent) !important;
+  }
+
+    /* Search emojis. */
+  ._2Qm0c, ._2Qm0c label
+  {
+    background-color: var(--dark) !important;
+  }
+      /* Text color. */
+  ._2Qm0c input
+  {
+    color: var(--light) !important;
+  }
+
+    /* Gif preloader background. */
+  ._2x9yi
+  {
+      /* border: 2px dashed ; */
+    background-color: var(--darker) !important;
+  }
+
+      /* Preview. */
+  ._1drQ-
+  {
+    background-color: var(--dark) !important;
+  }
+        /* Header. */
+  ._1drQ- header
+  {
+    background-color: var(--accent) !important;
+  }
+          /* Text color. */
+  ._1drQ- header *, ._1drQ- .media-body *
+  {
+    color: var(--lighter) !important;
+  }
+        /* Footer. */
+  ._1drQ- .media-collection
+  {
+    background-color: var(--darker);
+  }
+          /* Button. */
+  ._1drQ- .media-collection .btn-fill, ._1drQ- ._3hV1n
+  {
+    color: var(--lighter);
+    background-color: var(--accent) !important;
+  }
+
+
+  /* Emoji-wanna-be-round. */
+  .emojik
+  {
+    opacity: var(--emojiOpacity);
+    transition: transform 200ms cubic-bezier(0.59, 0.57, 0.39, 1.04);
+    clip-path: circle(47%) !important;
+  }
+    /* Selected emoji. */
+  .emojik:focus, .emojik:hover, .emojik.selected
+  {
+    box-shadow: none !important;
+    opacity: 1;
+    transform: scale(1.15);
+  }
+
+    /* Emoji quick selection. */
+  ._2mlOb
+  {
+    border: 0 !important;
+    border-bottom: 1px solid var(--darker) !important;
+    background-color: var(--darker) !important;
+  }
+    /* Emoji race color popup. */
+  ._1gFYk
+  {
+    background-color: var(--dark) !important;
+  }
+      /* Separator. */
+  ._1gFYk ul li:first-child
+  {
+    border-right: 1px solid var(--darker) !important;
+  }
+      /* Emoji menu triangle. */
+  ._1gFYk .iqJMX
+  {
+    background-color: var(--dark) !important;
+  }
+
+
+
+  /* Backdrop. */
+  ._3Fq9Y, #startup, #initial_startup
+  {
+    background-color: var(--dark) !important;
+  }
+    /* Modal. */
+  ._3Fq9Y ._3RiLE,
+    ._3gUiM ._2dA13 ._1CnF3,
+    ._2dA13 ._18wuJ, ._2dA13 .IuYNx
+  {
+    box-shadow: 0 0 0 1px var(--darker), 0 8px 16px 0px var(--shadow) !important;
+    background-color: var(--darker) !important;
+  }
+      /* Selected contact. */
+  ._3gUiM ._2EXPL._1f1zm,
+      ._3gUiM ._2EXPL:hover,
+      ._2EXPL._3ntaf:hover
+  {
+    background-color: var(--dark) !important;
+  }
+      /* Text color. */
+  ._3Fq9Y ._3RiLE *,
+      ._3gUiM ._1CnF3 *
+  {
+    color: var(--light);
+  }
+      /* Header/footer. */
+  ._2dA13 header,
+      ._2dA13 .iHLo1
+  {
+    background-color: var(--darker) !important;
+  }
+      /* Empty element below search bar. */
+  ._2fq0t span._3fOoY
+  {
+    display: none !important;
+  }
+
+
+  /* Buttons. */
+  .PNlAR, ._3hV1n, ._2Gki6, ._13iu_
+  {
+    color: var(--lighter) !important;
+    background-color: var(--accent) !important;
+  }
+  /* Muted checkbox color. */
+  ._1VD7W
+  {
+    border-color: var(--accent);
+    background-color: var(--accent);
+  }
+  /* Buttons. */
+  .PNlAR:hover, ._1WZqU:hover
+  {
+    background-color: var(--dark) !important;
+  }
+
+  /* Drop items. (-: */
+  .drag-drop, ._2n-96
+  {
+    background-color: var(--dark) !important;
+  }
+    /* Footer. */
+  ._3nuGo
+  {
+    background-color: var(--darker) !important;
+  }
+    /* Border. */
+  ._2n-96 ._3L-be
+  {
+    border: 5px dashed var(--accent) !important;
+    color: var(--light) !important;
+  }
+
+    /* Add file icon. */
+  .GpvML, ._1ypOz
+  {
+    background-color: var(--dark) !important;
+  }
+      /* Border. */
+  ._2gZno::after
+  {
+    background-color: var(--accent) !important;
+  }
+
+    /* Accent border. */
+  .CzI8E, ._31WRs ._1DTd4
+  {
+    border-bottom-color: var(--accent) !important;
+  }
+    /* Text color. */
+  ._7HWvs
+  {
+    color: var(--light) !important;
+  }
+
+  /** Status area! */
+  .app-wrapper-web ._2dLx9
+  {
+    background-color: transparent !important;
+  }
+  /* Pseudo-element background. */
+  .app-wrapper-web ._2dLx9::before
+  {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--dark);
+    opacity: 0.8;
+    z-index: -1;
+  }
+    /* Normal icon. */
+  span[data-icon="status-v3"] > svg > path:first-child
+  {
+    opacity: 0.55 !important;
+  }
+      /* Unread status. */
+  span[data-icon="status-v3-unread"] > svg > path:first-child
+  {
+    opacity: 1 !important;
+  }
+    /* Left hand side. */
+  ._2dLx9 .IMn_C
+  {
+    background-color: var(--darker) !important;
+  }
+      /* Text color. */
+  .IMn_C span
+  {
+    color: var(--lighter) !important;
+  }
+    /* Right hand side. */
+  ._2dLx9 ._3MBzN
+  {
+    background-color: var(--dark) !important;
+  }
+      /* Text color. */
+  ._2dLx9 ._3MBzN div
+  {
+    color: var(--lighter) !important;
+  }
+    /*// Reply to status. */
+  .C534L ._3PmkG
+  {
+    border-radius: 5px !important;
+    background-color: var(--dark) !important;
+  }
+
+  /*// REMOVE STUFF. */
+    /* Remove pseudo elements. */
+  [class*="chat"]:before, [class*="chat"]:after,
+    .gQzdc:after, ._1CkkN:before, ._3AwwN:after,
+    .MS-DH:before, .MS-DH:after, ._3YwRO
+  {
+    display: none !important;
+  }
+    /* Remove ONLY borders. */
+  ._1CkkN ._10xEB, ._14oqx .DcItJ,
+    html[dir] ._2EXPL:after, ._3j7s9,
+    ._1fkhx, .chat-body, ._3hhmj, ._2nmDZ
+  {
+    border: none !important;
+  }
+    /* Some random iframe? */
+  object
+  {
+    display: none !important;
+  }
+
+
+
+  /* Global icon color. */
+  span:not([data-icon="image"]) > svg > path
+  {
+    transition: 200ms ease;
+    fill: var(--icon) !important;
+  }
+    /* On event. */
+  span:not([data-icon="image"]):hover > svg > path
+  {
+      /* fill: var(--accent) !important; */
+    opacity: 0.3 !important;
+  }
+
+  /* Upload files. */
+  .GK4Lv::after
+  {
+    box-shadow: 0 1px 2px var(--shadow), 0 4px 8px var(--shadow) !important;
+  }
+
+  /* Default profile picture background. */
+  span[data-icon="default-user"] svg > path:first-child,
+  span[data-icon="default-group"] svg > path:first-child,
+  span[data-icon="default-broadcast"] svg > path:first-child
+  {
+    fill: var(--dark) !important;
+  }
+
+  span[data-icon="default-user"] svg > g > path:last-child,
+  span[data-icon="default-group"] svg > path:last-child,
+  span[data-icon="default-broadcast"] svg > path:last-child
+  {
+    opacity: 0.7;
+    fill: var(--icon) !important;
+  }
+
+  /*  Sent message. */
+  span[data-icon="msg-dblcheck"] svg path,
+  span[data-icon="status-dblcheck"] svg path,
+  span[data-icon="msg-check"] svg path,
+  span[data-icon="status-check"] svg path
+  {
+    fill: var(--light) !important;
+    opacity: 0.5 !important;
+  }
+
+  /* Sent AND seen message. */
+  span[data-icon="msg-dblcheck-ack"] svg path,
+  span[data-icon="status-dblcheck-ack"] svg path,
+  span[data-icon="msg-dblcheck-ack-light"] svg path,
+  span[data-icon="status-v3-unread"] > svg > path:last-child
+  {
+    fill: var(--accent) !important;
+    opacity: 1 !important;
+  }
+
+  /* Misc icons fix. */
+  span[data-icon="chevron-left"] svg path,
+  span[data-icon="chevron-right"] svg path,
+  span[data-icon="x-viewer"] svg path,
+  span[data-icon="download"] svg path,
+  span[data-icon="forward"] svg path,
+  span[data-icon="star-btn"] svg path,
+  span[data-icon="audio-file"] svg path:last-child,
+  span[data-icon="new-group"] svg path,
+  span[data-icon="add-user-light"] svg path,
+  span[data-icon="link"] svg path,
+  span[data-icon="ptt-in-blue"] svg path:first-child,
+  span[data-icon="ptt-out-blue"] svg path:first-child
+  {
+    fill: var(--icon) !important;
+  }
+
+  /* Audio message icons. */
+  span[data-icon="ptt-in-blue"] svg path:first-child,
+  span[data-icon="ptt-out-blue"] svg path:first-child
+  {
+    fill: transparent !important;
+  }
+
+  /* Logo. */
+  ._3CSsZ > svg > path:first-child
+  {
+    fill: var(--accent) !important;
+  }
+
+  span[data-icon="logo"] svg path:nth-child(1)
+  {
+    fill: white !important;
+  }
+
+  span[data-icon="alert-phone"] svg path:first-child,
+  span[data-icon="logo"] svg path:nth-child(1n+2),
+ 	span[data-icon="whatsapp-logo"] svg path:first-child
+  {
+    fill: var(--darker) !important;
+  }
+
+  /* GIF icon opacity. */
+  span[data-icon="emoji-gifs"] svg path
+  {
+    fill: var(--icon) !important;
+    fill-opacity: 1 !important;
+  }
+
+  /* Be cautious icons. */
+  span[data-icon="exit"] svg path,
+  span[data-icon="thumbs-down"] svg path,
+  span[data-icon="delete-danger"] svg path
+  {
+    fill: var(--mred) !important;
+  }
+
+  /* Audio message. */
+  span[data-icon="audio-file"] svg path
+  {
+    fill: rgba(255, 173, 31, 0.8) !important;
+  }
+    /* Audio length bar. */
+  ._22cMG.fS1bA .nDKsM
+  {
+    background-color: var(--accent) !important;
+  }
+      /* Slider thumb. */
+  input[type=range]::-webkit-slider-thumb
+  {
+    cursor: pointer;
+    background: var(--accent) !important;
+  }
+
+  /* Rounded buttons. */
+  span svg > path[fill="#00BFA5"]
+  {
+    fill: var(--accent) !important;
+  }
+
+  /* Disable background image on small resolutions. */
+  @  media screen and (max-width: 1441px)
+  {
+    ._1FKgS: :after {
+      display: none !important;
+  }
+}
+
+@media screen and (min-width: 1441px)
+{
+    /* Animation. */
+  html[dir=ltr] ._3dqpi
+  {
+      /* display: none !important; */
+    animation: _104Un 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.38);
+  }
+
+    /* App wrapper. */
+  #app .app
+  {
+    border-radius: 8px;
+    box-shadow: 0 4px 24px -2px var(--shadow);
+  }
+
+    /* Fullscreen. */
+    /* Fullscreen is disabled. */
+
+    /* App background. */
+  #app > div::after
+  {
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: auto;
+    width: auto;
+    background-color: var(--dark) !important;
+    background-image: var(--image) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+  /* "Privacy mode." */
+  /* Blurred contacts are disabled. */
+  /* Blurred images are disabled. */
+
+  /* Compact mode. */
+@media screen and (max-height: 500px)
+{
+  ._3dqpi
+  {
+    min-height: auto;
+  }
+}
+
+@media screen and (max-width:720px)
+{
+    /* .app > div { box-shadow: inset 0 0 0 4px var(--accent); } */
+    /* Header fix. */
+  ._3auIg
+  {
+    min-width: 220px;
+  }
+    /* Contacts flexbox. */
+  .app.two > .k1feT,
+    .three .k1feT
+  {
+    transition: 250ms ease-in-out;
+    flex: 0 0 075px !important;
+  }
+    /* Chat section. */
+  ._1Iexl
+  {
+    flex: 0 0 65% !important;
+  }
+    /* On hover or active sub-menus. */
+  .app.two > .k1feT:hover,
+    .MZIyP .k1feT
+  {
+    transition-delay: 1s !important;
+    flex: 0 0 30% !important;
+  }
+    /* Info flexbox. */
+  .three ._2yeJ5
+  {
+    width: calc(100% - 75px) !important;
+    left: 75px !important;
+  }
+    /* Chat flexbox. */
+  .two > ._1Iexl
+  {
+    margin: 0 !important;
+    flex: 0 0 calc(100% - 75px) !important;
+  }
+    /* Search contacts. */
+  .two .k1feT:not(:hover) ._2MSJr
+  {
+    padding: 0;
+  }
+    /* On hover. */
+  .two .k1feT:hover ._2MSJr
+  {
+    transition-delay: 1s !important;
+  }
+
+    /** Hack for positioning unread counter. */
+  #side:not(:hover) ._3j7s9 ._1AwDx ._3Bxar span > div
+  {
+    z-index: 101;
+    position: absolute;
+  }
+    /* ? Unread counter. */
+  #side:not(:hover) div > .OUeyt
+  {
+    height: 18px;
+    padding: 0 5px 0 5px;
+    margin: -5px 0 0 -35px;
+    background-color: var(--dark) !important;
+    box-shadow: 0 0 0 3px var(--darker) !important;
+  }
+    /* On event. */
+    /*#side:hover div > .OUeyt {
+      background-color: var(--dark) !important;
+      box-shadow: 0 0 0 3px var(--darker) !important; }*\/
+	
+    /* ? Message status. */
+  .two .k1feT ._3j7s9 ._1VfKB
+  {
+    z-index: 101;
+    position: absolute;
+    margin-left: -68px;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-color: var(--dark);
+    box-shadow: 0 0 0 3px var(--darker);
+  }
+    /* Background on event. */
+  .two .k1feT ._2EXPL:hover ._1VfKB,
+    .two .k1feT ._2EXPL._1f1zm ._1VfKB
+  {
+    background-color: var(--darker);
+    box-shadow: 0 0 0 3px var(--dark) !important;
+  }
+	
+    /** Icon size. */
+  .two .k1feT ._3j7s9 ._1VfKB span > svg
+  {
+    padding: 2px;
+    height: 14px !important;
+    width: 14px !important;
+  }
+
+    /* Hide all icons except new messages. */
+  .two .k1feT ._15G96 span:not(.OUeyt),
+    .two .k1feT .ZR5SB
+  {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 720px)
+{
+    /* Width overflow fix. */
+  ._3dqpi
+  {
+    min-width: 100%;
+  }
+    /* On hover or active sub-menus. */
+  .app.two > .k1feT:hover,
+    .MZIyP .k1feT
+  {
+    transition-delay: 1s !important;
+    flex: 0 0 40% !important;
+  }
+}
+`);
