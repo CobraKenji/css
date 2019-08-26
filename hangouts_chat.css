@@ -405,11 +405,11 @@ div .mUbCce:hover, div .mUbCce:focus, div .mUbCce:active, div .mUbCce.qs41qe, di
 /* browse room and search exit button */
 .xTcvqe .fKz7Od, .wbJc4 .fKz7Od {
     color: #000 !important;
+    fill: #000 !important;
+}
 
 /* background for received cards */
 .aPoydb.PiXiEf.ohJDzb.Iia6Bd {
     /* color: #c15c5c; */
     background-color: #414141;
-}
-    fill: #000 !important;
 }
